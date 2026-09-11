@@ -53,7 +53,7 @@
 <main>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: September 6, 2026</p>
+<p class="updated">Last updated: September 10, 2026</p>
 
 <p>
 This Privacy Policy explains how PartyWheel handles information when you use the application.
@@ -114,7 +114,7 @@ The Android version of PartyWheel uses Google Analytics for Firebase to understa
 </p>
 
 <p>
-Firebase Analytics may collect technical and usage information, including app interactions, diagnostic information, device and app information, identifiers associated with the application installation, and device identifiers such as the Android Advertising ID when available.
+Firebase Analytics may collect technical and usage information, including app interactions, diagnostic information, device and app information, and a pseudonymous identifier associated with the application installation. PartyWheel does not collect the Android Advertising ID.
 </p>
 
 <p>
@@ -136,11 +136,11 @@ PartyWheel does not currently display advertisements and does not use advertisin
 </p>
 
 <p>
-On Android, the Firebase Analytics SDK may process device and application identifiers for analytics purposes. PartyWheel disables Advertising ID collection in the Android application configuration.
+On Android, the Firebase Analytics SDK may process a pseudonymous application-instance identifier for analytics purposes. PartyWheel disables Advertising ID collection and removes the Advertising ID permission from the Android application, so the Advertising ID is not available to the app.
 </p>
 
 <p>
-PartyWheel does not use the Advertising ID to display targeted advertising and does not use Firebase Analytics for personalized advertising.
+PartyWheel does not use Firebase Analytics for personalized advertising.
 </p>
 
 <p>
@@ -172,7 +172,11 @@ Game-session information exchanged between nearby devices may be discarded when 
 </p>
 
 <p>
-Analytics data collected through Google Analytics for Firebase is retained and managed according to Google's and Firebase's applicable data retention and deletion practices.
+On Android, analytics collection can be turned off at any time using the "Anonymous analytics" switch in the profile editor, and the pseudonymous identifier assigned to your installation can be deleted using the "Delete my analytics data" button in the same screen. Once that identifier is deleted, previously reported usage events are no longer linked to your installation.
+</p>
+
+<p>
+Analytics data collected through Google Analytics for Firebase is otherwise retained and managed according to Google's and Firebase's applicable data retention and deletion practices. Step-by-step instructions are available on the <a href="data-deletion.html">Data Deletion</a> page.
 </p>
 
 <h2>9. Security</h2>
@@ -198,7 +202,8 @@ For privacy-related questions, contact the PartyWheel developer using the contac
 </p>
 
 <footer>
-  <a href="terms.html">Terms of Use</a>
+  <a href="terms.html">Terms of Use</a> &middot;
+  <a href="data-deletion.html">Data Deletion</a>
 </footer>
 
 </main>
